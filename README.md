@@ -9,8 +9,7 @@ The project:
 + Uses functions to make code reusable
 + Uses console.log and alert appropriately to display messages
 + Uses some HTML and CSS to create a basic website. Use at least 4 different HTML tags
-and style at least 2 of them. This does not need to look good! It is just a demo of what is
-covered.
+and style at least 2 of them. 
 + Gets input from the user on a web page
 + Makes changes to the HTML or CSS using JavaScript
 + Uses an event to trigger a change to a web page.
