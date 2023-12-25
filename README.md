@@ -2,7 +2,7 @@
 
 Welcome to my Metro Fee calculator - written in JS, styled frontend interface with HTML/CSS!
 
-The project:
+This project:
 + Uses boolean values and if..else statements to branch logic of your program
 + Uses a data structure like an array to store values
 + Uses a loop or a while loop to reduce repetition
@@ -14,6 +14,6 @@ and style at least 2 of them.
 + Makes changes to the HTML or CSS using JavaScript
 + Uses an event to trigger a change to a web page.
 
-  For an interactive user experience, please visit the CodePen of this page available here:
+  For an interactive user experience, please visit the CodePen of this page available here: [CodePen Demo](https://codepen.io/Anu-Bazar-the-lessful/pen/mdoyObo)
   
 
