@@ -1,6 +1,7 @@
 # MetroFee
 
 Welcome to my Metro Fee calculator - written in JS, styled frontend interface with HTML/CSS!
+This project was inspired by the not-so-fair metro fee pay increase and was modeled off of M4, my favorite metro line.
 
 This project:
 + Uses boolean values and if..else statements to branch logic of your program
