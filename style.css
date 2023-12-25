@@ -1,0 +1,20 @@
+/* light grey body with Arial text*/
+body {
+    font-family: 'Arial';
+    background-color: whitesmoke;
+    margin: 0;
+    padding: 0;
+}
+/* grey header with times new roman text */
+header {
+    background-color: pink;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+/*some padding to the main*/
+main {
+    padding: 20px;
+}
+
+/*I used 3 styling blocks for this part 🫡*/

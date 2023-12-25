@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Assignment 1 - JS </title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!-- Sam said this part was unnecessary but I included it anyway, it might show an error message at the bottom! But it has 0 problems running on VS code 🫡 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metro 4 Budapest Fee Calculator</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<!--Body element-->
+<body>
+    <header>
+        <h1>Welcome to The Budapest M4 Metro Fee Calculator</h1>
+    </header>
+    <main>
+      <div>
+        <h2>Calculate Your Metro Fare here with the new Anu™️ system!🤖</h2>
+        <div>   
+        <!-- This is the BKK Budapest Public Transport system company logo -->
+        <img id="BKK-logo" src="https://bkk.hu/static/cache/web/bkk/img/default-tn.jpg">
+        </div>  
+<!-- small intro about the tool -->
+        <p>Welcome to my made-up Metro Fee Calculator.Ⓜ️ I attached a map of the M4 line below so you won't get lost. This is my favorite metro line out of all 4 metro lines in Budapest because it's one of the newest ones in terms of construction. Recently the pay fare rose from 350 HUF to 600 HUF so I wanted to make a tool that introduces an alternative payment system that takes into account how far the traveler goes. Disclaimer: This is a CFG Degree Assignment on Javascript and is intended only for the course assessment purposes only. 
+      </div>
+<div>
+<!-- Metro 4 line information -->
+<a href="https://www.urbanrail.net/eu/hu/budapest/budapest-line4.htm">For more information on the beloved M4 metro line, CLICK here.🫡</a></p>
+</div>
+  
+<div>   
+<!-- This is a picture of the M4 metro line from an official EU site -->
+        <img id="metro-map-M4" src="https://www.urbanrail.net/eu/hu/budapest/metro-m4.png" alt="M4 map">
+</div>
+  
+<div>
+<h2>Personal information</h2>
+<span>What is your full name?:</span>
+  <p><input type="string" id="full-name" placeholder="e.g.: John Smith"></p>
+<span>How old are you?:</span>
+  <p><input type="number" id="age" placeholder="e.g.: 23"></p>
+</div>
+  
+<div>
+<span>Do you have a Budapest Residence Card?</span>
+  <p>
+        <input type="radio" id="hasCard" name="bp-card" value="true">
+        <label for="hasCard">Yes</label><br>
+        <input type="radio" id="noCard" name="bp-card" value="false">
+        <label for="noCard">No</label><br>
+  </p>
+</div>
+  
+<!--This is where we ask the users where theyre coming from -->
+<div>
+    <h3>What is your nearest metro station?:</h3>
+    <p></p>
+    <input type="radio" id="nearestKelenfold" name="nearest-metro-station" value="Kelenfold vasutallomas">
+    <label for="nearestKelenfold">Kelenfold vasutallomas</label><br>
+
+    <input type="radio" id="nearestBikasPark" name="nearest-metro-station" value="Bikas Park">
+    <label for="nearestBikasPark">Bikas Park</label><br>
+
+    <input type="radio" id="nearestUjbudaKozpont" name="nearest-metro-station" value="Ujbuda kozpont">
+    <label for="nearestUjbudaKozpont">Ujbuda kozpont</label><br>
+
+    <input type="radio" id="nearestMoriczZsigmond" name="nearest-metro-station" value="Moricz Zsigmond korter">
+    <label for="nearestMoriczZsigmond">Moricz Zsigmond korter</label><br>
+
+    <input type="radio" id="nearestSzentGellert" name="nearest-metro-station" value="Szent Gellert ter">
+    <label for="nearestSzentGellert">Szent Gellert ter</label><br>
+
+    <input type="radio" id="nearestFovamTer" name="nearest-metro-station" value="Fovam ter">
+    <label for="nearestFovamTer">Fovam ter</label><br>
+
+    <input type="radio" id="nearestKalvinTer" name="nearest-metro-station" value="Kalvin ter">
+    <label for="nearestKalvinTer">Kalvin ter</label><br>
+
+    <input type="radio" id="nearestRakocziTer" name="nearest-metro-station" value="Rakoczi ter">
+    <label for="nearestRakocziTer">Rakoczi ter</label><br>
+
+    <input type="radio" id="nearestJanosPalPapa" name="nearest-metro-station" value="II. Janos Pal papa ter">
+    <label for="nearestJanosPalPapa">II. Janos Pal papa ter</label><br>
+
+    <input type="radio" id="nearestKeletiPalyaudvar" name="nearest-metro-station" value="Keleti palyaudvar">
+    <label for="nearestKeletiPalyaudvar">Keleti palyaudvar</label><br>
+</div>
+  
+<!--This is where we ask the users where theyre going-->
+<div>
+    <h3>What is your destination metro station?:</h3>
+    <p></p>
+    <input type="radio" id="destinationKelenfold" name="destination-metro-station" value="Kelenfold vasutallomas">
+    <label for="destinationKelenfold">Kelenfold vasutallomas</label><br>
+
+    <input type="radio" id="destinationBikasPark" name="destination-metro-station" value="Bikas Park">
+    <label for="destinationBikasPark">Bikas Park</label><br>
+
+    <input type="radio" id="destinationUjbudaKozpont" name="destination-metro-station" value="Ujbuda kozpont">
+    <label for="destinationUjbudaKozpont">Ujbuda kozpont</label><br>
+
+    <input type="radio" id="destinationMoriczZsigmond" name="destination-metro-station" value="Moricz Zsigmond korter">
+    <label for="destinationMoriczZsigmond">Moricz Zsigmond korter</label><br>
+
+    <input type="radio" id="destinationSzentGellert" name="destination-metro-station" value="Szent Gellert ter">
+    <label for="destinationSzentGellert">Szent Gellert ter</label><br>
+
+    <input type="radio" id="destinationFovamTer" name="destination-metro-station" value="Fovam ter">
+    <label for="destinationFovamTer">Fovam ter</label><br>
+
+    <input type="radio" id="destinationKalvinTer" name="destination-metro-station" value="Kalvin ter">
+    <label for="destinationKalvinTer">Kalvin ter</label><br>
+
+    <input type="radio" id="destinationRakocziTer" name="destination-metro-station" value="Rakoczi ter">
+    <label for="destinationRakocziTer">Rakoczi ter</label><br>
+
+    <input type="radio" id="destinationJanosPalPapa" name="destination-metro-station" value="II. Janos Pal papa ter">
+    <label for="destinationJanosPalPapa">II. Janos Pal papa ter</label><br>
+
+    <input type="radio" id="destinationKeletiPalyaudvar" name="destination-metro-station" value="Keleti palyaudvar">
+    <label for="destinationKeletiPalyaudvar">Keleti palyaudvar</label><br>
+</div>
+</div>
+  
+<!-- This is the cash or card button/event-->
+<div id =cashOrCard-div style="text-align: center;"> 
+  <h3 id= cashOrCard-h3>Select payment method? 💰💵💶💷🏧</h3>
+  <select>
+	<option id=cash-payment value="Cash">Cash</option>
+	<option id=card-payment value="Card">Card</option>
+</select>
+  <button id="cashOrCardButton" onclick="cashOrCard()">Save</button>
+</div>
+  
+  <!-- this is our calculator button that triggers the js function and computes the metro fare-->
+<div>
+<button onclick="calculateFare()">Calculate Your Fare Now!</button>
+<!--This shows us our metro fare, and is computed and then shown on the bottom-->
+<p>Your fare in total: <span id="metroFare" ></span></p>
+</div>
+    </main>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
